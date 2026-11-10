@@ -21,6 +21,42 @@
                     Join the nexus
                 </h1>
                 <p class="brand__subtitle">Initialize your NEONCORE identity</p>
+
+                <div class="operator">
+                    <div class="operator__header">
+                        <p class="operator__label">Operator ID</p>
+                        <p class="operator__ready" id="operator-ready">0/5 ready</p>
+                    </div>
+
+                    <p class="operator__id operator__id--empty" id="operator-id">Unassigned</p>
+
+                    <ul class="operator__list">
+                        <li class="operator__item">
+                            <span class="operator__field">Callsign</span>
+                            <span class="operator__status" id="status-callsign">Pending</span>
+                        </li>
+                        <li class="operator__item">
+                            <span class="operator__field">Email</span>
+                            <span class="operator__status" id="status-email">Pending</span>
+                        </li>
+                        <li class="operator__item">
+                            <span class="operator__field">Password</span>
+                            <span class="operator__status" id="status-password">Pending</span>
+                        </li>
+                        <li class="operator__item">
+                            <span class="operator__field">Confirm</span>
+                            <span class="operator__status" id="status-confirm">Pending</span>
+                        </li>
+                        <li class="operator__item">
+                            <span class="operator__field">Terms</span>
+                            <span class="operator__status" id="status-terms">Pending</span>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+
             </section>
 
             <section class="signup">
@@ -115,6 +151,21 @@
                 <p class="signup__login">
                     Already an operator? <a class="link" href="#">Log in</a>
                 </p>
+
+                <div class="success" id="success" hidden>
+                    <img class="success__icon" src="./assets/images/icon-hex-check.svg" alt="" width="78" height="72">
+
+                    <h2 class="success__title" id="success-title" tabindex="-1">
+                        <span class="success__slashes" aria-hidden="true">//</span>
+                        Handshake complete
+                    </h2>
+
+                    <p class="success__text">
+                        Operator <span class="success__name" id="success-name"></span> provisioned. Your account is ready.
+                    </p>
+
+                    <a class="success__button">Continue to log in</a>
+                </div>
 
             </section>
         </main>
