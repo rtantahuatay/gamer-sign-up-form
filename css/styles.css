@@ -1,0 +1,87 @@
+@font-face {
+    font-family: "Orbitron";
+    src: url("../assets/fonts/orbitron/static/orbitron-800.ttf") format("truetype");
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("../assets/fonts/jetbrains-mono/static/jetbrains-mono-400.ttf") format(truetype);
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("../assets/fonts/jetbrains-mono/static/jetbrains-mono-700.ttf") format(truetype);
+    font-weight: 700;
+    font-display: swap;
+}
+
+
+:root {
+    /* Colores neutros */
+    --neutral-950: hsl(214 37% 4%);
+    --neutral-900: hsl(210 39% 7%);
+    --neutral-800: hsl(211 30% 13%);
+    --neutral-700: hsl(211 22% 24%);
+    --neutral-600: hsl(210 18% 42%);
+    --neutral-500: hsl(211 14% 50%);
+    --neutral-400: hsl(211 13% 55%);
+    --neutral-300: hsl(211 18% 68%);
+    --neutral-100: hsl(208 49% 92%);
+    --neutral-50: hsl(204 60% 97%);
+
+    /* Acentos */
+    --lime-500: hsl(77 90% 59%);
+    --lime-700: hsl(77 67% 39%);
+    --red-400: hsl(4 100% 74%);
+    --amber-400: hsl(40 100% 65%);
+    --navy-950: hsl(214 60% 2%);
+
+    /* Transparentes */
+    --lime-alpha-60: hsl(77 90% 59% / 0.6);
+    --lime-alpha-40: hsl(77 90% 59% / 0.4);
+    --navy-alpha-80: hsl(214 60% 2% / 0.8);
+    --navy-alpha-60: hsl(214 60% 2% / 0.6);
+
+    /* Fuentes */
+    --font-display: "Orbitron", sans-serif;
+    --font-mono: "JetBrains Mono", monospace;
+
+}
+
+/* ========== Reset ========== */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button {
+    font: inherit;
+    color: inherit;
+}
+
+/* ========== Base ========== */
+
+body {
+    min-height: 100vh;
+    background-color: var(--neutral-950);
+    color: var(--neutral-100);
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+}
