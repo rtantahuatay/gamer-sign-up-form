@@ -65,10 +65,35 @@
                             </button>
                         </div>
 
+                        <div class="strength" aria-hidden="true">
+                            <span class="strength__bar"></span>
+                            <span class="strength__bar"></span>
+                            <span class="strength__bar"></span>
+                            <span class="strength__bar"></span>
+                        </div>
+
+
                         <div class="field__footer">
                             <p class="field__message" id="password-message">At least 8 characters</p>
                             <p class="strength__label" id="password-strength" aria-live="polite"></p>
                         </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="field__label" for="confirm-password">
+                            <span class="field__prompt" aria-hidden="true">&gt;</span>
+                            Confirm password
+                        </label>
+
+                        <div class="field__control">
+                            <input class="field__input" type="password" id="confirm-password" autocomplete="new-password" 
+                            required aria-describedby="confirm-password-message">
+                            <button class="field__toggle" type="button" aria-label="Show password confirmation" aria-pressed="false"
+                            aria-controls="confirm-password">
+                            <img src="./assets/images/icon-eye.svg" alt="" width="20" height="20">
+                            </button>
+                        </div>
+                        <p class="field__message" id="confirm-password-message"></p>
                     </div>
 
 
