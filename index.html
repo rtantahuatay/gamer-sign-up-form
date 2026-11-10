@@ -34,7 +34,7 @@
                             <span class="field__prompt" aria-hidden="true" >&gt;</span>
                             Callsign
                         </label>
-                        <input class="field__input" type="text" id="callsign" name="callsign" placeholder="eg Vortex_07"
+                        <input class="field__input" type="text" id="callsign" name="callsign" placeholder="e.g. Vortex_07"
                         autocomplete="username" required aria-describedby="callsign-message">
 
                         <p class="field__message" id="callsign-message">3-20 characters: letters, numbers, _ or -</p>
@@ -86,18 +86,36 @@
                         </label>
 
                         <div class="field__control">
-                            <input class="field__input" type="password" id="confirm-password" autocomplete="new-password" 
+                            <input class="field__input" type="password" id="confirm-password" name="confirm-password" autocomplete="new-password" 
                             required aria-describedby="confirm-password-message">
                             <button class="field__toggle" type="button" aria-label="Show password confirmation" aria-pressed="false"
                             aria-controls="confirm-password">
-                            <img src="./assets/images/icon-eye.svg" alt="" width="20" height="20">
+                                <img src="./assets/images/icon-eye.svg" alt="" width="20" height="20">
                             </button>
                         </div>
                         <p class="field__message" id="confirm-password-message"></p>
                     </div>
 
+                    <div class="field">
+                        <div class="checkbox">
+                            <input class="checkbox__input" type="checkbox" id="terms" name="terms" required aria-describedby="terms-message">
+                            <label class="checkbox__label" for="terms">
+                                I accept the <a class="link" href="#">Terms</a> and <a class="link" href="#">Privacy Policy</a>.
+                            </label> 
+                        </div>
+                        <p class="field__message" id="terms-message"></p>
+                    </div>
+
+                    <button class="form__submit" type="submit">Initialize account</button>
+                    <p class="form__status" id="form-status" role="status"></p>
+
 
                 </form>
+
+                <p class="signup__login">
+                    Already an operator? <a class="link" href="#">Log in</a>
+                </p>
+
             </section>
         </main>
     </body>
