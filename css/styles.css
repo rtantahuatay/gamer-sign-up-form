@@ -247,6 +247,7 @@ body {
     position: relative;
     margin-top: 2rem;
     padding: 1.25rem;
+    border: 1px solid var(--neutral-800);
     background-color: var(--neutral-900);
 }
 
@@ -259,8 +260,8 @@ body {
 }
 
 .signup::before {
-    top: -1rem;
-    left: -1rem;
+    top: -1px;
+    left: -1px;
     border-top: 2px solid var(--lime-500);
     border-left: 2px solid var(--lime-500);
 }
@@ -312,3 +313,127 @@ body {
         display: inline;
     }
 }
+
+/* ========== Campos ========== */
+
+.field {
+    margin-bottom: 1.5rem;
+}
+
+.field__label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--neutral-300);
+}
+
+.field__prompt {
+    color: var(--lime-500);
+}
+
+.field__input {
+    width: 100%;
+    height: 3rem;
+    padding: 0 1rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--neutral-100);
+    background-color: var(--navy-950);
+    border: 1px solid var(--neutral-700);
+    border-radius: 0;
+}
+
+.field__input::placeholder {
+    color: var(--neutral-500);
+}
+
+.field__input:hover {
+    border-color: var(--neutral-500);
+}
+
+.field__input:focus-visible {
+    border-color: var(--lime-500);
+    outline: 2px solid var(--lime-500);
+    outline-offset: 2px;
+}
+
+.field__input[type="password"] {
+    letter-spacing: 0.16em;
+}
+
+/* Input con el botón del ojo */
+
+.filed__control {
+    position: relative;
+}
+
+.field__control .field__input {
+    padding-right: 3.5rem;
+}
+
+.field__toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: grid;
+    place-items: center;
+    width: 3rem;
+    height: 3rem;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+ }
+
+ .field__toggle:focus-visible {
+    outline: 2px solid var(--lime-500);
+    outline-offset: -6px;
+ }
+
+ /* Mensajes */
+
+ .field__message {
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: var(--neutral-400);
+ }
+
+ .field__message:empty {
+    display: none;
+ }
+
+ /* Medidor de fuerza */
+
+ .strength {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.25rem;
+    margin-top: 0.5rem;
+ }
+
+ .strength__bar {
+    height: 0.25rem;
+    background-color: var(--neutral-700);
+ }
+
+ .feild__footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 0.5rem;
+ }
+
+ .field__footer .field__message {
+    margin-top: 0;
+ }
+
+ .strength__label {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+ }
