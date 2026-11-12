@@ -625,3 +625,43 @@ body {
 .success__button {
     margin-top: 2rem;
 }
+
+/* ========== Layout tablet y escritorio ========== */
+
+/* Tablet: desde 768px */
+
+@media (min-width: 48rem) {
+    .layout {
+        max-width: 40rem;
+        margin: 0 auto;
+        padding: 3rem 2.5rem;
+    }
+}
+
+/* Escritorio: desde 1024px */
+
+@media (min-width: 64rem) {
+    body {
+        background-image: url("../assets/images/pattern-backdrop.svg");
+        background-repeat: no-repeat;
+        background-position: right -33rem center;
+    }
+
+    .layout {
+        display: grid;
+        grid-template-columns: 1fr 30rem;
+        gap: 5rem;
+        align-items: center;
+        max-width: 75rem;
+        min-height: 100vh;
+        padding: 5.5rem 2.5rem;
+    }
+
+    .signup {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 45rem;
+        margin-top: 0;
+    }
+}
